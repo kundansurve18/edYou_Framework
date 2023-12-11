@@ -18,6 +18,7 @@ public class LoginPOM {
 	@FindBy(how = How.XPATH,using="//button[@class='btnLogin mt-1 btn-social']")
 	private WebElement loginbutton;
 
+	
 	public WebElement getEmail() {
 		return email;
 	}
@@ -33,5 +34,6 @@ public class LoginPOM {
 	public WebElement getButton() {
 		return loginbutton;
 	}
+	
 	
 }

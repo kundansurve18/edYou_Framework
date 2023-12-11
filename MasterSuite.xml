@@ -9,4 +9,4 @@
       <class name="com.Test.TestCase_1"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </suite> <!-- Suite -->

@@ -4,9 +4,10 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+
 public class ExtendReportGenerator {
 	
-	public static ExtentReports getReports() {
+public static ExtentReports getReports() {
 		
 		String filepath = "D:\\vDoit Technologies\\edYou\\Automation\\Edyou_Framework\\Reports";
 		

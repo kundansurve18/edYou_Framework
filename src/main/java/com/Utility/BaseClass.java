@@ -35,12 +35,12 @@ public class BaseClass {
 		
 		//driver.close();
 		
-		EmailUtils emailutils = new EmailUtils();
+		/*EmailUtils emailutils = new EmailUtils();
 		Properties prop = new Properties();
 		prop.load(new FileInputStream("D:\\vDoit Technologies\\edYou\\Automation\\Edyou_Framework\\Config\\Config.Properties"));
 		List <String> attachments = new ArrayList<String>();
 		attachments.add("D:\\vDoit Technologies\\edYou\\Automation\\Edyou_Framework\\test-output\\emailable-report.html");
-		emailutils.sendUsingGmail(prop, "Test Execution Report", "Hi Team, Please find the attach test execution report.", attachments);
+		emailutils.sendUsingGmail(prop, "Test Execution Report", "Hi Team, Please find the attach test execution report.", attachments);*/
 		
 	}
 }

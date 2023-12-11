@@ -8,6 +8,7 @@
     <classes>
       <class name="com.Test.TestCase_1">
         <methods>
+          <include name="close"/>
           <include name="verify_login"/>
           <include name="open"/>
         </methods>

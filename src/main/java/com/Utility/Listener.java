@@ -1,8 +1,5 @@
 package com.Utility;
 
-import java.sql.Date;
-import java.text.SimpleDateFormat;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
@@ -26,13 +23,21 @@ public class Listener extends BaseClass implements ITestListener {
 
 	public void onTestSuccess(ITestResult result) {
 		Library.test.log(Status.PASS, "Test Case Pass");
-		Library.test.addScreenCaptureFromBase64String(getCapture());
+		try {
+			Library.test.addScreenCaptureFromBase64String(getCapture());
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 	}
 
 	public void onTestFailure(ITestResult result) {
 		Library.test.log(Status.FAIL, "Test Case Fail");
-		Library.test.addScreenCaptureFromBase64String(getCapture());
+		try {
+			Library.test.addScreenCaptureFromBase64String(getCapture());
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 	}
 
@@ -46,19 +51,15 @@ public class Listener extends BaseClass implements ITestListener {
 		
 	}
 	
-	public static String getCapture() {
+	
+	public static String getCapture() throws InterruptedException {
+		Thread.sleep(26000);
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		return ts.getScreenshotAs(OutputType.BASE64);
 		
 	}
 	
-	public static String generateDynamicReportName() {
-		 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
-	        Date currentDate = new Date(0);
-	        String timestamp = dateFormat.format(currentDate);
-	        String filename = "report_" + timestamp + ".html";
-	        System.out.println("Dynamic Report Filename: " + filename);
-			return filename;
-    }
-
+	
 }
+
+
