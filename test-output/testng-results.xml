@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-11T18:04:06 IST" name="Suite" finished-at="2023-12-11T18:05:34 IST" duration-ms="88382">
+  <suite started-at="2023-12-12T15:01:54 IST" name="Suite" finished-at="2023-12-12T15:02:30 IST" duration-ms="36127">
     <groups>
     </groups>
-    <test started-at="2023-12-11T18:04:06 IST" name="Test" finished-at="2023-12-11T18:05:34 IST" duration-ms="88382">
+    <test started-at="2023-12-12T15:01:54 IST" name="Test" finished-at="2023-12-12T15:02:30 IST" duration-ms="36127">
       <class name="com.Test.TestCase_1">
-        <test-method is-config="true" signature="open()[pri:0, instance:com.Test.TestCase_1@273444fe]" started-at="2023-12-11T18:04:06 IST" name="open" finished-at="2023-12-11T18:05:07 IST" duration-ms="61768" status="PASS">
+        <test-method is-config="true" signature="open()[pri:0, instance:com.Test.TestCase_1@c430e6c]" started-at="2023-12-12T15:01:54 IST" name="open" finished-at="2023-12-12T15:02:03 IST" duration-ms="9486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method signature="verify_login()[pri:0, instance:com.Test.TestCase_1@273444fe]" started-at="2023-12-11T18:05:07 IST" name="verify_login" finished-at="2023-12-11T18:05:08 IST" duration-ms="406" status="PASS">
+        <test-method signature="verify_login()[pri:0, instance:com.Test.TestCase_1@c430e6c]" started-at="2023-12-12T15:02:03 IST" name="verify_login" finished-at="2023-12-12T15:02:04 IST" duration-ms="410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.Test.TestCase_1@273444fe]" started-at="2023-12-11T18:05:34 IST" name="close" finished-at="2023-12-11T18:05:34 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:com.Test.TestCase_1@c430e6c]" started-at="2023-12-12T15:02:30 IST" name="close" finished-at="2023-12-12T15:02:30 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
