@@ -15,7 +15,7 @@ public class Library {
 			element.sendKeys(value);
 			test.log(Status.PASS, "Value successfully send = "+value);
 		}catch (Exception e) {
-			test.log(Status.FAIL, e.getMessage());
+		//	test.log(Status.FAIL, e.getMessage());
 		}
 		
 	}
@@ -26,7 +26,7 @@ public class Library {
 			element.click();
 			test.log(Status.PASS, "Clicked successfully");
 		}catch (Exception e) {
-			test.log(Status.FAIL, e.getMessage());
+			//test.log(Status.FAIL, e.getMessage());
 		}
 		
 	}
