@@ -3,6 +3,7 @@ package com.Utility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -22,8 +23,9 @@ public class BaseClass {
 	public void open() {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("use-fake-ui-for-media-stream");
+		options.setCapability("remoteUrl", "http://52.66.250.87:8080/");
 		//WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver(options);
+		driver = new RemoteWebDriver(options);
 		driver.get("https://devappsite.edyou.com/");
 		driver.manage().window().maximize();
 		
