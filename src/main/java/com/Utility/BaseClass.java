@@ -22,7 +22,7 @@ public class BaseClass {
 	public void open() {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("use-fake-ui-for-media-stream");
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(options);
 		driver.get("https://devappsite.edyou.com/");
 		driver.manage().window().maximize();
