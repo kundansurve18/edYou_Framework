@@ -15,7 +15,7 @@ public class TestCase_1 extends BaseClass{
 		LoginPOM login = PageFactory.initElements(driver , LoginPOM.class);
 		
 		Library.custom_sendkeys(login.getEmail(), "testalli@yopmail.com");
-		Library.custom_sendkeys(login.getPassword(), "123456789");
+		Library.custom_sendkeys(login.getPassword(), "12345678");
 		Library.custom_click(login.getCheckbox());
 		Library.custom_click(login.getButton());
 		
